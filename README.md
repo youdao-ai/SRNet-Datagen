@@ -52,6 +52,8 @@ From left to right, from top to bottom are examples of `i_s, i_t, t_sk, t_t, t_b
 
 - opencv-python
 
+- Augmentor
+
 &nbsp;
 ## Reference
 - [Editing Text in the Wild](https://arxiv.org/abs/1908.03047)
