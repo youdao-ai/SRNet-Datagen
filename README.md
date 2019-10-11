@@ -14,10 +14,6 @@ This data generator project is simplified based on the following two projects.
 
 [Skeletonization-of-Digital-Patterns](https://github.com/anupamwadhwa/Skeletonization-of-Digital-Patterns): Adjusted this project to Python3 code to skeletonize mask_t and get `t_sk`.
 
-![image](https://github.com/youdao-ai/SRNet/blob/master/examples/example/data.png)
-
-From left to right, from top to bottom are examples of `i_s, i_t, t_sk, t_t, t_b, t_f, mask_t`
-
 &nbsp;
 ## Generate data
 First prepare a directory of fonts and a background datasets without text, you can also prepare a word corpus for rendering.
@@ -44,7 +40,7 @@ You can also use this project to generate data online while training SRNet.
 
 - `mask_t`: the binary mask of styled text b
 
-![image](https://github.com/youdao-ai/SRNet/examples/example/data.png)
+![image](https://github.com/youdao-ai/SRNet/blob/master/examples/example/data.png)
 
 From left to right, from top to bottom are examples of `i_s, i_t, t_sk, t_t, t_b, t_f, mask_t`
 
