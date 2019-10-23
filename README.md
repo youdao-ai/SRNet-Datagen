@@ -18,7 +18,7 @@ This data generator project is a simplification based on the following two proje
 ## Generate data
 First prepare a directory of fonts and a background datasets without text. You can also prepare a word corpus for rendering. 
 
-You need to write the absolute path of each data in the background dataset as a line into a file, and modify the path of this file in `bg_filepath` parameter of `Synthtext/data_cfg.py`. 
+You need to write the absolute path of each data in the background dataset as a line into a file, and modify `bg_filepath` parameter of `Synthtext/data_cfg.py` to the path of this file. 
 
 You can adjust other data configurations in `Synthtext/data_cfg.py`. The following is a description of some parameters.
 
