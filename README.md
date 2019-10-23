@@ -2,13 +2,13 @@
 
 &nbsp;
 ## Introduction
-This is a data generator of SRNet which is the model of paper *Editing Text in the wild*.
+This is a data generator of SRNet which is the model described in the paper *Editing Text in the wild*.
 
 Our tensorflow reproducing of SRNet: [https://github.com/youdao-ai/SRNet](https://github.com/youdao-ai/SRNet)
 
 Original paper: [*Editing Text in the wild*](https://arxiv.org/abs/1908.03047) by Liang Wu, Chengquan Zhang, Jiaming Liu, Junyu Han, Jingtuo Liu, Errui Ding and Xiang Bai.
 
-This data generator project is simplified based on the following two projects.
+This data generator project is a simplification based on the following two projects.
 
 [Synthtext](https://github.com/ankush-me/SynthText): Extracted the rendering part of the project and Adjusted to Python3 code to get `i_s`, `t_t`, `t_f` and `mask_t`
 
@@ -16,13 +16,25 @@ This data generator project is simplified based on the following two projects.
 
 &nbsp;
 ## Generate data
-First prepare a directory of fonts and a background datasets without text, you can also prepare a word corpus for rendering.
+First prepare a directory of fonts and a background datasets without text. You can also prepare a word corpus for rendering. 
 
-You can adjust the data configurations in `Synthtext/data_cfg.py`. 
+You need to write the absolute path of each data in the background dataset as a line into a file, and modify the path of this file in `bg_filepath` parameter of `Synthtext/data_cfg.py`. 
 
-Then you adjust generating configurations in `cfg.py` including saving directory, the amount of data to generat and the number of processes to use.
+You can adjust other data configurations in `Synthtext/data_cfg.py`. The following is a description of some parameters.
 
-Finally `Python datagen.py` and start generating.
+- font_dir: the directory path of fonts in ttf format.
+
+- standard_font_path: the standard font to render i_t.
+
+- text_filepath: a file containing the text of the word to be rendered, each line is a word.
+
+- bg_filepath: a file containing the absolute path of each background image.
+
+- color_filepath: a file used to select the color of the text which is given by Synthtext project.
+
+Then you will need to adjust generating configurations in `cfg.py` including saving directory, the amount of data to generat and the number of processes that are needed.
+
+Finally `python3 datagen.py` and start generating.
 
 You can also use this project to generate data online while training SRNet.
 
