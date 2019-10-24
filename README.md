@@ -22,15 +22,15 @@ You need to write the absolute path of each data in the background dataset as a 
 
 You can adjust other data configurations in `Synthtext/data_cfg.py`. The following is a description of some parameters.
 
-- font_dir: the directory path of fonts in ttf format.
+- `font_dir`: the directory path of fonts in ttf format.
 
-- standard_font_path: the standard font to render i_t.
+- `standard_font_path`: the standard font to render i_t.
 
-- text_filepath: a file containing the text of the word to be rendered, each line is a word.
+- `text_filepath`: a file containing the text of the word to be rendered, each line is a word.
 
-- bg_filepath: a file containing the absolute path of each background image.
+- `bg_filepath`: a file containing the absolute path of each background image.
 
-- color_filepath: a file used to select the color of the text which is given by Synthtext project.
+- `color_filepath`: a file used to select the color of the text which is given by Synthtext project.
 
 Then you will need to adjust generating configurations in `cfg.py` including saving directory, the amount of data to generat and the number of processes that are needed.
 
