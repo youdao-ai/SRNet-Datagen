@@ -59,5 +59,5 @@ shadow_angle_degree = [1, 3, 5, 7] # shift for shadow_angle_param
 shadow_angle_param = [0.5, None] # scale, shift for np.random.randn()
 shadow_shift_param = np.array([[0, 1, 3], [2, 7, 15]], dtype = np.float32) # scale, shift for np.random.randn()
 shadow_opacity_param = [0.1, 0.5] # shift for shadow_angle_param
-color_filepath = 'data/colors.cp'
+color_filepath = 'data/colors_new.cp'
 use_random_color_rate = 0.5
