@@ -299,8 +299,9 @@ class Colorize(object):
 
 def get_color_matrix(col_file):
 
-    with open(col_file,'rb') as f:
-        colorsRGB = cp.load(f)
+    # with open(col_file,'rb') as f:
+    #     colorsRGB = cp.load(f)
+    colorsRGB = np.load(col_file)
     ncol = colorsRGB.shape[0]
     colorsLAB = np.r_[colorsRGB[:,0:3], colorsRGB[:,6:9]].astype(np.uint8)
     colorsLAB = np.squeeze(cv2.cvtColor(colorsLAB[None,:,:], cv2.COLOR_RGB2Lab))
